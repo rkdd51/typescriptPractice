@@ -7,7 +7,12 @@ const State = () => {
     setValue({
       name: "Rahul",
       place: "Ahmedabad",
-      age: 23
+      age: 23,
+      address: {
+        area: "Makarba",
+        pincode: 400104,
+        building: "B"
+      }
     });
   };
 
@@ -20,6 +25,10 @@ const State = () => {
       {value?.place}
       <br />
       {value?.age}
+      <br />
+      {value?.address.area}
+      {value?.address.pincode}
+      {value?.address.building}
     </>
   );
 };
